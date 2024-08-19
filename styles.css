@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+/* 
+   Weights: 500, 700, 900
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pale-blue:  hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif; 
+    background: url(images/pattern-background-desktop.svg) center center/cover no-repeat;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container .content-box .content-page {
+    text-align: center;
+    background-color: var(--pale-blue);
+    height: 500px;
+}
+
+.container .content-box .content-page .main-img {
+    width: 450px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    height: 200px;
+    margin-bottom: 0;
+}
+
+
+.container .content-box .content-page h2 {
+    font-weight: 900;
+    margin: 15px 0;
+    color: var(--dark-blue);
+}
+
+.container .content-box .content-page p {
+    color: var(--desaturated-blue);
+    margin: 10px 0;
+}
+
+.container .content-box .content-page .price {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.container .content-box .content-page .price div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content-box .content-page .price div {
+    margin-left: 15px;
+}
+
+.container .content-box .content-page .price div p span{
+    color: var(--dark-blue);
+    font-weight: 700;
+} 
+
+.container .content-box .content-page .price a {
+    color: var(--dark-blue);
+    font-weight: 500;
+   
+}
+
+.container .content-box .content-page .footer a {
+    display: inline-block;
+    width: 70%;
+    background-color: var(--bright-blue);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container .content-box .content-page .footer p:hover,
+.container .content-box .content-page .price a:hover{
+    color: var(--desaturated-blue);
+}
+
+.container .content-box .content-page .footer a:hover {
+    background-color: var(--desaturated-blue);
+}
+
+.container .content-box .content-page .footer p {
+    cursor: pointer;
+    color: var(--dark-blue);
+    font-weight: 500;
+}
+
+@media (max-width: 400px) {
+    body {
+        background: url(images/pattern-background-mobile.svg) center center/cover no-repeat;
+    }
+}
+
+
