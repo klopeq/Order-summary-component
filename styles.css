@@ -37,9 +37,8 @@ body {
 
 .container .content-box .content-page .main-img {
     width: 450px;
-    /* border-top-left-radius: 18px;
-    border-top-right-radius: 18px; */
-    border-radius: 18px;
+     border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
     height: 200px;
     margin-bottom: 0;
 }
